@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-family: monospace;
+}
+.container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    margin-left: 25%;  
+}
+div img{
+    width: 300px;
+    height: 200px;
+}
+.filtros{
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 2px solid greenyellow;
+    padding: 10px;
+}
+label{
+    padding-left: 15px;
+}
+div span{
+    font-weight: lighter;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.item{
+    display: none;
+}
+.item.visible {
+    display: block;
+}
+
+.computer {
+    border: 1px solid rgb(239, 237, 100);
+    width: 80px;
+    padding: 5px;
+    font-weight: lighter;
+    background-color: rgb(249, 247, 123);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.snacks p{
+    border: 1px solid rgb(178, 3, 221);
+    width: 80px;
+    padding: 5px;
+    font-weight: lighter;
+    background-color: rgb(195, 26, 221);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.snaps p{
+    border: 1px solid rgb(8, 127, 245);
+    width: 80px;
+    padding: 5px;
+    font-weight: lighter;
+    background-color: rgb(111, 209, 254);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+@media(width < 500px){
+    .container{
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin-left: 6%;
+    }
+    div span{
+        font-size: 18px;
+    }
+    .filtros{
+        margin-left: 5%;
+        width: 90%;
+    }
+   
+}
